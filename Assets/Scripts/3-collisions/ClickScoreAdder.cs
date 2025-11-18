@@ -8,16 +8,20 @@ public class ClickScoreAdder : MonoBehaviour
     [SerializeField] protected InputAction addAction = new InputAction(type: InputActionType.Button);
     [SerializeField] protected int scoreToAdd;
 
-    void OnEnable()    {        addAction.Enable();    }
-    void OnDisable()    {        addAction.Disable();    }
+    void OnEnable(){
+      addAction.Enable();    
+}
+    void OnDisable(){
+      addAction.Disable();    
+   }
 
-    private void Start()   {
+    private void Start(){
        // GetComponent<NumberField>().SetNumber(1);
        FindObjectOfType<NumberField>().SetNumber(0);
     }
 
 
- private void Update() {
+ private void Update(){
         if (addAction.WasPressedThisFrame()) {
            FindObjectOfType<NumberField>().AddNumber(scoreToAdd);
 

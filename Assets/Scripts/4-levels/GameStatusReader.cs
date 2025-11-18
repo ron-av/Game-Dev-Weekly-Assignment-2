@@ -7,7 +7,7 @@ using UnityEngine;
  */
 [RequireComponent(typeof(NumberField))]
 public class GameStatusReader : MonoBehaviour {
-    void Start() {
+    void Start(){
         GetComponent<NumberField>().SetNumber(GAME_STATUS.playerScore);
     }
 }

@@ -11,10 +11,8 @@ public class LaserShooter : ClickSpawner
     [Tooltip("How many points to add to the shooter, if the laser hits its target")]
     int pointsToAdd = 1;
 
-    // קלט של ירייה (מקש רווח)
     [SerializeField] private InputAction shootAction = new InputAction(type: InputActionType.Button);
 
-    // קצב ירי (0.2 שניות ברירת מחדל)
     [SerializeField] private float fireRate = 0.2f;
 
     private float nextFireTime = 0f;
@@ -33,7 +31,6 @@ public class LaserShooter : ClickSpawner
 
     private void Update()
     {
-        // ירי רציף כל עוד המקש לחוץ
         if (shootAction.IsPressed() && Time.time >= nextFireTime)
         {
             spawnObject();

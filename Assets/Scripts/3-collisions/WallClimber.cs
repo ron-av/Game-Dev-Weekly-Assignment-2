@@ -7,7 +7,7 @@ public class WallClimber : MonoBehaviour
     [Tooltip("Direction and speed of movement, in units per second")]
     [SerializeField] Vector3 speed;
 
-    void Update() {
+    void Update(){
         transform.position += speed * Time.deltaTime;
     }
 
