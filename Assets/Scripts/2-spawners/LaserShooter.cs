@@ -12,7 +12,11 @@ public class LaserShooter : ClickSpawner
     int pointsToAdd = 1;
 
     [SerializeField] private InputAction shootAction = new InputAction(type: InputActionType.Button);
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 2d770cd11476413a6e34f3ca0a9b9287af6977e7
     [SerializeField] private float fireRate = 0.2f;
 
     private float nextFireTime = 0f;
