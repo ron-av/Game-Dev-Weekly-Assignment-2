@@ -1,5 +1,5 @@
 # Game-Dev-Weekly-Assignment-3
-# 📝 README – Jungle Hunter (Unity Game)
+# Jungle Hunter 
 
 ## 🎮 Game Overview
 This project is a modified version of the original space-themed shooter game.  
